@@ -2,7 +2,7 @@
   "name": "blurry-env",
   "displayName": "Blurry Env",
   "description": "Blurs out sensitive credentials in .env files with a single click.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "engines": {
     "vscode": "^1.90.0"
   },
