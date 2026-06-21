@@ -1,0 +1,40 @@
+{
+  "name": "env-hider",
+  "displayName": "env-hider",
+  "publisher": "amey-bhogaonkar",
+  "description": "Blurs out secrets in .env files with a top-bar toggle button.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:properties",
+    "onLanguage:dotenv"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "env-hider.toggleHide",
+        "title": "Toggle Secrets Visibility",
+        "icon": "$(eye)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "env-hider.toggleHide",
+          "group": "navigation",
+          "when": "resourceLangId == properties || resourceLangId == dotenv"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/node": "^20.0.0"
+  }
+}
