@@ -19,6 +19,6 @@ jobs:
         run: npm install
 
       - name: Publish to marketplace
-        run: npx @vscode/vsce publish --allow-missing-repository
+        run: npx @vscode/vsce publish --allow-missing-repository --publisher AmeyBhogaonkar
         env:
           SCODE_MARKETPLACE_TOKEN: ${{ secrets.VSCODE_MARKETPLACE_TOKEN }}
