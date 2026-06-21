@@ -36,5 +36,9 @@
   "devDependencies": {
     "@types/vscode": "^1.90.0",
     "@types/node": "^20.0.0"
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/Amey1109/env-hider"
   }
 }
