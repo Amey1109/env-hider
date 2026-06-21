@@ -15,13 +15,11 @@ let isHidingEnabled = true;
 function activate(context) {
     
     // Command to toggle the hiding feature
-    let toggleCommand = vscode.commands.registerCommand('blurry.toggleHide', () => {
+   let toggleCommand = vscode.commands.registerCommand('blurry.toggleHide', () => {
         isHidingEnabled = !isHidingEnabled;
-        
-        // Update the button icon dynamically based on state
-        // (Optional: standard buttons stay static, but this toggles the blur view)
         updateDecorations(vscode.window.activeTextEditor);
     });
+    context.subscriptions.push(toggleCommand);
     context.subscriptions.push(toggleCommand);
 
     // Listen for when the user switches to a different file
