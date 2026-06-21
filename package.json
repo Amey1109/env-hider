@@ -1,12 +1,13 @@
 {
-  "name": "env-hider",
-  "displayName": "env-hider",
-  "publisher": "amey-bhogaonkar",
-  "description": "Blurs out secrets in .env files with a top-bar toggle button.",
-  "version": "0.0.1",
+  "name": "blurry-env",
+  "displayName": "Blurry Env",
+  "description": "Blurs out sensitive credentials in .env files with a single click.",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.90.0"
   },
+  "publisher": "AmeyBhogaonkar",
+  "license": "MIT",
   "categories": [
     "Other"
   ],
@@ -15,10 +16,11 @@
     "onLanguage:dotenv"
   ],
   "main": "./extension.js",
+  "icon": "icon.png",
   "contributes": {
     "commands": [
       {
-        "command": "env-hider.toggleHide",
+        "command": "blurry.toggleHide",
         "title": "Toggle Secrets Visibility",
         "icon": "$(eye)"
       }
@@ -26,19 +28,11 @@
     "menus": {
       "editor/title": [
         {
-          "command": "env-hider.toggleHide",
+          "command": "blurry.toggleHide",
           "group": "navigation",
           "when": "resourceLangId == properties || resourceLangId == dotenv"
         }
       ]
     }
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.90.0",
-    "@types/node": "^20.0.0"
-  },
-  "repository": {
-  "type": "git",
-  "url": "https://github.com/Amey1109/env-hider"
   }
 }
