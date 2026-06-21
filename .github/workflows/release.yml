@@ -30,4 +30,4 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Publish to marketplace
-        run: npx @vscode/vsce publish --allow-missing-repository --azure-credential
+        run: npx @vscode/vsce publish --allow-missing-repository --azure-credential --publisher AmeyBhogaonkar
