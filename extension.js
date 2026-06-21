@@ -15,7 +15,7 @@ let isHidingEnabled = true;
 function activate(context) {
     
     // Command to toggle the hiding feature
-    let toggleCommand = vscode.commands.registerCommand('env-hider.toggleHide', () => {
+    let toggleCommand = vscode.commands.registerCommand('blurry.toggleHide', () => {
         isHidingEnabled = !isHidingEnabled;
         
         // Update the button icon dynamically based on state

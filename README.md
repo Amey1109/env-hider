@@ -28,7 +28,7 @@ Env Hider registers a global command that you can bind to your favorite hotkeys 
 
 | Action | Command ID | Description |
 | :--- | :--- | :--- |
-| **Toggle Hide** | `env-hider.toggleHide` | Instantly switches between blurring and revealing all secrets |
+| **Toggle Hide** | `blurry.toggleHide` | Instantly switches between blurring and revealing all secrets |
 
 ---
 
